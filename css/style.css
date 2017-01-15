@@ -1,0 +1,241 @@
+*:after,
+*:before {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto";
+	font-size: 18px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-y: hidden;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+body,
+html {
+	height: 100vh;
+	font-size: 18px;
+	width: 100%;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+
+.menu {
+	background-color: transparent;
+	position: fixed;
+	display: flex;
+	width: 100%;
+	min-width: 720px;
+	height: 130px;
+	top: 0;
+}
+
+.menu-center {
+	width: calc(100% - 240px);
+	max-width: 1082px;
+	min-width: 920px;
+	margin: 0 auto;
+	display: flex;
+}
+
+#font-menu {
+	align-self: center;
+	margin: 0 auto;
+	width: 100%;
+	padding-right: 72px;
+	text-align: right;
+}
+
+#font-menu h2 {
+	font-size: 0.96em;
+}
+
+.col-5 {
+	float: left;
+	display: flex;
+	min-width: 195px;
+	width: 18%;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	text-align: right;
+}
+
+.col-half {
+	float: left;
+	display: flex;
+	width: 46%;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	text-align: left;
+}
+
+#logo {
+	color: #343434;
+	margin: 0;
+	font-family: Montserrat;
+	font-size: 1.333em;
+	letter-spacing: 0.05em;
+	font-weight: 700;
+}
+
+#color-contain {
+	margin-top: 7px;
+	display: flex;
+	justify-content: center;
+	align-self: flex-start;
+	height: 80%;
+	flex-direction: row;
+	position: relative;
+	margin-left: auto;
+}
+
+.color-circle {
+	margin-left: 12px;
+	height: 24px;
+	width: 24px;
+	border-radius: 24px;
+	/*border: 1px solid #EAEAEA;*/
+	box-shadow: 1px 1px 1px 1px rgba(20, 20, 20, 0.1);
+}
+
+.menu-title {
+	font-family: "Roboto Condensed";
+	opacity: 0.3;
+	font-weight: 700;
+	font-size: 0.7em;
+	margin-top: 42px !important;
+	margin-bottom: 0;
+	flex-grow: 1;
+	height: auto;
+}
+
+.menu-value h2 {
+	font-style: normal !important;
+	font-weight: 400;
+	font-size: 1.33em !important;
+	margin: 0 0 38px 0;
+	max-height: 35px !important;
+}
+
+.article-paper {
+	border: 0.2px solid rgba(220, 220, 220, 0.4);
+	background-color: #F2F5F7;
+	position: relative;
+	top: 130px;
+	padding: 0;
+	left: 0;
+	height: calc(100vh - 130px);
+	width: calc(100% - 240px);
+	min-width: 920px;
+	max-width: 1082px;
+	margin: 0 auto;
+	display: flex;
+	z-index: 9999;
+	border-radius: 4px 4px 0 0;
+	transform: translate3d(0, 0, 0);
+	transition: transform .6s ease, opacity .3s ease;
+}
+
+#main-article {
+	position: relative;
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+
+#main-article h1 {
+	font-size: 2.111em;
+	font-family: 'Roboto';
+	-webkit-font-smoothing: antialiased;
+	outline: none;
+	color: #212121;
+}
+
+.article-paper:hover,
+p {
+	cursor: default;
+}
+
+#main-article p {
+	font-family: 'Cormorant Garamond', 'Vollkorn', 'Adobe Garamond Pro';
+	color: #424242;
+	font-weight: 400;
+	outline: none;
+	margin-bottom: 1em;
+	font-size: 1.111em;
+	line-height: 1.58;
+}
+
+.has-tooltip {
+	position: relative;
+}
+
+
+/*Copy to Clipboard on click*/
+
+
+/*.has-tooltip:hover {
+	cursor: pointer;
+}*/
+
+.has-tooltip .tooltip {
+	font-family: "Roboto Condensed";
+	pointer-events: none;
+	position: absolute;
+	z-index: 9999;
+	left: 50%;
+	top: 30px;
+	opacity: 0;
+	-moz-transition: ease-out 300ms opacity 0ms;
+	-o-transition: ease-out 300ms opacity 0ms;
+	-webkit-transition: ease-out 300ms opacity;
+	-webkit-transition-delay: 0ms;
+	transition-delay: 0ms;
+	transition: ease-out 300ms opacity 0ms;
+}
+
+.has-tooltip .tooltip span {
+	display: block;
+	white-space: nowrap;
+	position: relative;
+	background: rgba(0, 0, 0, 0.6);
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding: 4px 8px;
+	left: -50%;
+	font-size: 16px;
+	color: #fff;
+}
+
+.has-tooltip .tooltip span:after {
+	top: -45%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	border-bottom-color: rgba(0, 0, 0, 0.6);
+	border-width: 6px;
+	left: 50%;
+	margin-left: -6px;
+}
+
+.has-tooltip:hover span {
+	opacity: 1;
+}
+
+label {
+	background-color: transparent;
+	padding-left: 0;
+	padding-right: 0.4rem;
+	border-bottom: 1px solid #eaeaea;
+}
