@@ -5,6 +5,11 @@
  */
 var combo = [
     [
+        ["Elsie", "400", 2.24, "#F58580", "Lato", 400, 1.11, "#775555", "#FEE1DB"],
+        ["Josefin Sans", 700, 2.11, "#3366CC", "Lora", 400, 1.11, "#343434", "#F6F6F6"],
+        ["Muli", 400, 2.11, "#FDFDFD", "PT Sans", 400, 1.11, "#EDEEEB", "#253239"],
+    ],
+    [
         ["Roboto Condensed", 400, 2.24, "#4D3EEE", "Roboto Slab", 400, 1.11, "#4B2B55", "#FCDCEB"],
         ["Vidaloka", 400, 2.11, "#F0CF61", "Overpass", 400, 1.11, "#EAEAEA", "#2C3979"],
         ["Dosis", 700, 2.11, "#F58580", "Cabin", 400, 1.2, "#343434", "#FFFFF2"],
