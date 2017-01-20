@@ -5,8 +5,13 @@
  */
 var combo = [
     [
+        ["Bree Serif", 400, 2.24, "#773344", "Libre Franklin", 400, 1.11, "#0B0014", "#F5E9E2"],
+        ["Open Sans", "700", 2.11, "#7161EF", "Fira Sans", 400, 1.11, "#FDFDFD", "#111111"],
+        ["Eczar", 700, 2.1, "#EF233C", "Alegreya", 400, 1.11, "#8D99AE", "#2B2D42"],
+    ],
+    [
         ["Nunito", 700, 2.11, "#00C76C", "Arsenal", 400, 1.2, "#FDFDFD", "#1F2427"],
-        ["Bitter", 400, 2.24, "#FF654B", "Lora", 400, 1.2, "#2A2D66", "#EFDB9F"],        
+        ["Bitter", 400, 2.24, "#FF654B", "Lora", 400, 1.2, "#2A2D66", "#EFDB9F"],
         ["Quicksand", "700", 2.11, "#AFFFCC", "Open Sans", 400, 1.11, "#00D1AB", "#1D1856"],
     ],
     [
