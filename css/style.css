@@ -30,15 +30,15 @@ html {
 	position: fixed;
 	display: flex;
 	width: 100%;
-	min-width: 720px;
+	/*min-width: 720px;*/
 	height: 130px;
 	top: 0;
 }
 
 .menu-center {
 	width: calc(100% - 240px);
-	max-width: 1082px;
-	min-width: 920px;
+	/*max-width: 1082px;*/
+	/*min-width: 920px;*/
 	margin: 0 auto;
 	display: flex;
 }
@@ -58,7 +58,6 @@ html {
 .col-5 {
 	float: left;
 	display: flex;
-	min-width: 195px;
 	width: 18%;
 	justify-content: center;
 	flex-direction: column;
@@ -120,8 +119,8 @@ html {
 	font-style: normal !important;
 	font-weight: 400;
 	font-size: 1.33em !important;
-	margin: 0 0 38px 0;
-	max-height: 35px !important;
+	/*margin: 0 0 38px 0;*/
+	/*max-height: 35px !important;*/
 }
 
 .article-paper {
@@ -133,7 +132,7 @@ html {
 	left: 0;
 	height: calc(100vh - 130px);
 	width: calc(100% - 240px);
-	min-width: 920px;
+	/*min-width: 920px;*/
 	max-width: 1082px;
 	margin: 0 auto;
 	display: flex;
@@ -238,4 +237,49 @@ label {
 	padding-left: 0;
 	padding-right: 0.4rem;
 	border-bottom: 1px solid #eaeaea;
+}
+
+
+/*Desktop*/
+
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+	.menu-value h2 {
+		font-style: normal !important;
+		font-weight: 400;
+		font-size: 1.33em !important;
+		margin: 0 0 38px 0;
+		max-height: 35px !important;
+	}
+	.menu {
+		min-width: 720px;
+	}
+	.menu-center {
+		width: calc(100% - 240px);
+		max-width: 1082px;
+		min-width: 920px;
+	}
+	.col-5 {
+		min-width: 195px;
+	}
+}
+
+
+/*Tablets*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	.menu-value h2 {}
+	.menu {
+		height: 150px;
+		min-width: 720px;
+	}
+	.menu-center {
+		height: 150px;
+		width: calc(100% - 40px);
+		/*max-width: 1082px;*/
+		/*min-width: 920px;*/
+	}
+	.col-5 {}
+	.menu-title {
+		height: 20px !important;
+	}
 }
