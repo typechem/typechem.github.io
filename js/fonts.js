@@ -3,21 +3,23 @@
  *          Paragraph Font, Paragraph Weight, Paragraph Size, Paragraph Color,
  *          Background Color ]
  */
+// FIX Eczar
+
 var combo = [
     [
         ["Montserrat", "700", 2.11, "#E5DFD3", "PT Sans", 400, 1.11, "#1DB0A1", "#13302E"],
-        ["Prata", "400", 2.1, "#535A73", "Average", 400, 1.24, "#9FA7C4", "#F2F2F2"],
-        ["Oxygen", 700, 2.1, "#343434", "Ropa Sans", 400, 1.24, "#646464", "#FFEB3B"]
+        ["Prata", "400", 2.11, "#535A73", "Average", 400, 1.24, "#9FA7C4", "#F2F2F2"],
+        ["Oxygen", 700, 2.11, "#343434", "Ropa Sans", 400, 1.24, "#646464", "#FFEB3B"]
     ],
     [
         ["Bree Serif", 400, 2.24, "#773344", "Libre Franklin", 400, 1.11, "#0B0014", "#F5E9E2"],
         ["Open Sans", "700", 2.11, "#7161EF", "Fira Sans", 400, 1.11, "#FDFDFD", "#111111"],
-        ["Eczar", 700, 2.1, "#EF233C", "Alegreya", 400, 1.11, "#8D99AE", "#2B2D42"]
+        ["Droid Serif", 700, 2.24, "#EF233C", "Alegreya", 400, 1.24, "#8D99AE", "#2B2D42"]
     ],
     [
         ["Nunito", 700, 2.11, "#00C76C", "Arsenal", 400, 1.2, "#FDFDFD", "#1F2427"],
         ["Bitter", 400, 2.24, "#FF654B", "Lora", 400, 1.2, "#2A2D66", "#EFDB9F"],
-        ["Quicksand", "700", 2.11, "#AFFFCC", "Open Sans", 400, 1.11, "#00D1AB", "#1D1856"]
+        ["Quicksand", "700", 2.24, "#AFFFCC", "Open Sans", 400, 1.11, "#00D1AB", "#1D1856"]
     ],
     [
         ["Elsie", "400", 2.24, "#F58580", "Lato", 400, 1.11, "#775555", "#FEE1DB"],
