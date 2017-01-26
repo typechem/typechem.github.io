@@ -276,7 +276,6 @@ label {
 		height: calc(100% - 130px);
 		bottom: 0;
 		position: absolute;
-		/*display: none;*/
 	}
 	.info-dropdown {
 		display: block;
