@@ -80,6 +80,45 @@ $(document).ready(function () {
 		$('#circle-background').css("background-color", color);
 	}
 
+	function nextCombo(e) {
+		// console.log("SBC: " + hitCount + " WC: " + day);
+		e.preventDefault();
+		if (hitCount == 1) {
+			if (day + 1 < dayCount)
+				loadGoogleFonts(day + 1);
+		}
+		if (hitCount < 3) {
+			hitCount++;
+		}
+		if (hitCount == 3) {
+			if (day < dayCount - 1)
+				day++;
+			else
+				day = 0;
+			hitCount = 0;
+		}
+		setCombo(day, hitCount);
+	}
+
+	function previousCombo(e) {
+		if (day != 0 || hitCount != 0) {
+			// console.log("SBC: " + hitCount + " WC: " + day);
+			e.preventDefault();
+			if (day - 1 >= 0)
+				loadGoogleFonts(day - 1);
+			if (hitCount > 0) {
+				hitCount--;
+			} else {
+				if (day > 0)
+					day--;
+				else
+					day = dayCount - 1;
+				hitCount = 2;
+			}
+			setCombo(day, hitCount);
+		}
+	}
+
 	//------------------------------//
 	//Title change when tab inactive//
 	//------------------------------//
@@ -97,43 +136,32 @@ $(document).ready(function () {
 		document.title = pairTitle;
 	}
 
+	$('#info-icon').click(function () {
+		$('.article-paper').toggle();
+		if ($(this).text() == "CLOSE") {
+			$(this).text("INFO")
+			$(this).css("color", "#343434");
+		} else {
+			$(this).text("CLOSE");
+			$(this).css("color", "#F85658");
+		}
+	});
+
+	$('p, h1').on('swipeleft', function (e) {
+		nextCombo(e);
+	});
+
+	$('p, h1').on('swiperight', function (e) {
+		previousCombo(e);
+	});
+
+
 	$(window).keydown(function (e) {
 		if (e.keyCode === 39 || e.keyCode === 32) {
-			// console.log("SBC: " + hitCount + " WC: " + day);
-			e.preventDefault();
-			if (hitCount == 1) {
-				if (day + 1 < dayCount)
-					loadGoogleFonts(day + 1);
-			}
-			if (hitCount < 3) {
-				hitCount++;
-			}
-			if (hitCount == 3) {
-				if (day < dayCount - 1)
-					day++;
-				else
-					day = 0;
-				hitCount = 0;
-			}
-			setCombo(day, hitCount);
+			nextCombo(e);
 		}
 		if (e.keyCode === 37) {
-			if (day != 0 || hitCount != 0) {
-				// console.log("SBC: " + hitCount + " WC: " + day);
-				e.preventDefault();
-				if (day - 1 >= 0)
-					loadGoogleFonts(day - 1);
-				if (hitCount > 0) {
-					hitCount--;
-				} else {
-					if (day > 0)
-						day--;
-					else
-						day = dayCount - 1;
-					hitCount = 2;
-				}
-				setCombo(day, hitCount);
-			}
+			previousCombo(e);
 		}
 		$('.da').css("color", combo[day][hitCount][3]);
 		pairTitle = "TypeChemistry - " + combo[day][hitCount][0] + " + " + combo[day][hitCount][4];

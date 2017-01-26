@@ -42,7 +42,7 @@ html {
 	min-width: 170px;
 	float: left;
 	display: flex;
-	width: 18%;
+	width: 33.33%;
 	justify-content: center;
 	flex-direction: column;
 	position: relative;
@@ -54,6 +54,7 @@ html {
 	display: flex;
 	width: 46%;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	position: relative;
 	text-align: left;
@@ -62,9 +63,11 @@ html {
 #logo {
 	color: #343434;
 	margin: 0;
+	left: 0;
+	position: absolute;
 	font-family: Montserrat;
 	font-size: 1.333em;
-	letter-spacing: 0.05em;
+	letter-spacing: 0em;
 	font-weight: 700;
 }
 
@@ -237,19 +240,76 @@ label {
 }
 
 .menu-value h2 {
+	line-height: 100%;
 	white-space: nowrap;
-	margin: 0 0 36px 0 !important;
+	margin-top: 8px;
 	max-height: 35px !important;
 }
 
-@media only screen and (min-device-width: 768px) {
-	.menu-center {
+.menu-info {
+	display: block;
+	width: 54%;
+	float: right;
+}
+
+#info-icon {
+	font-weight: 700;
+	font-size: 0.8em;
+}
+
+@media only screen and (min-device-width: 1024px) {
+	.menu {
 		min-width: 720px;
+	}
+	#info-icon {
+		display: none;
 	}
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+@media only screen and (min-device-width: 275px) and (max-device-width: 1024px) {
+	.col-half {
+		width: 90%;
+		margin: 0 auto;
+	}
 	.menu-info {
-		display: none;
+		width: 97%;
+		height: calc(100% - 130px);
+		bottom: 0;
+		position: absolute;
+		/*display: none;*/
+	}
+	.info-dropdown {
+		display: block;
+	}
+	#main-article {
+		padding: 20px 24px;
+	}
+	#color-contain {
+		margin: 0 auto;
+	}
+	.color-circle {
+		margin-top: 8px;
+	}
+	.color-circle:first-child {
+		margin-left: 0;
+	}
+	#info-icon {
+		display: inline-block;
+		font-family: "Roboto Condensed";
+		border: 1px solid gray;
+		padding: 6px 10px;
+		border-radius: 1px;
+	}
+	.col-half {
+		justify-content: space-between;
+		flex-direction: row;
+	}
+	#logo {
+		font-size: 1.2em;
+		position: relative;
+	}
+	.col-5 {
+		text-align: center;
+		width: 97%;
 	}
 }
