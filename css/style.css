@@ -295,9 +295,8 @@ label {
 	#info-icon {
 		display: inline-block;
 		font-family: "Roboto Condensed";
-		border: 1px solid gray;
-		padding: 6px 10px;
-		border-radius: 1px;
+		border-bottom: 3px solid gray;
+		padding: 2px 2px;
 	}
 	.col-half {
 		justify-content: space-between;
