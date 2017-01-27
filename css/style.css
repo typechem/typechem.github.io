@@ -54,7 +54,7 @@ html {
 	display: flex;
 	width: 46%;
 	justify-content: center;
-	align-items: center;
+/* 	align-items: center; */
 	flex-direction: column;
 	position: relative;
 	text-align: left;
@@ -64,7 +64,7 @@ html {
 	color: #343434;
 	margin: 0;
 	left: 0;
-	position: absolute;
+/* 	position: absolute; */
 	font-family: Montserrat;
 	font-size: 1.333em;
 	letter-spacing: 0em;
@@ -299,6 +299,7 @@ label {
 		padding: 2px 2px;
 	}
 	.col-half {
+		align-items: center;
 		justify-content: space-between;
 		flex-direction: row;
 	}
