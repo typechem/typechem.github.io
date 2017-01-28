@@ -7,7 +7,7 @@
 
 var combo = [
     [
-        ["Montserrat", "700", 2.11, "#E5DFD3", "PT Sans", 400, 1.11, "#1DB0A1", "#13302E"],
+        ["Montserrat", "700", 1.8, "#E5DFD3", "PT Sans", 400, 1.0, "#1DB0A1", "#13302E"],
         ["Prata", "400", 2.11, "#535A73", "Average", 400, 1.24, "#9FA7C4", "#F2F2F2"],
         ["Oxygen", 700, 2.11, "#343434", "Ropa Sans", 400, 1.24, "#646464", "#FFEB3B"]
     ],

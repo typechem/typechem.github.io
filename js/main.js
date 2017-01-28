@@ -22,25 +22,25 @@ $(document).ready(function () {
 	var day = 0;
 
 	function setCombo(we, co) {
-		setHeadingFont(combo[we][co][0], combo[we][co][1], combo[we][co][2]);
+		setTitleFont(combo[we][co][0], combo[we][co][1], combo[we][co][2]);
 		setParagraphFont(combo[we][co][4], combo[we][co][5], combo[we][co][6]);
-		setHeadingColor(combo[we][co][3]);
+		setTitleColor(combo[we][co][3]);
 		setParagraphColor(combo[we][co][7]);
 		setBackgroundColor(combo[we][co][8]);
 	}
 
 	/**
-	 * Set the heading font
+	 * Set the Title font
 	 */
-	function setHeadingFont(font, weight, size) {
+	function setTitleFont(font, weight, size) {
 		if (weight.length > 3)
 			$('#main-article h1').css("font-style", "italic");
 		else
 			$('#main-article h1').css("font-style", "normal");
 		weight = parseInt(weight);
-		$('#heading').html("<h2>" + font + "</h2>");
-		$('#heading').css("font-family", font);
-		$('#heading').css("font-style", "normal");
+		$('#title').html("<h2>" + font + "</h2>");
+		$('#title').css("font-family", font);
+		$('#title').css("font-style", "normal");
 		$('#main-article h1').css("font-weight", weight);
 		$('#main-article h1').css("font-family", font);
 		$('#main-article h1').css("font-size", size + "em");
@@ -62,10 +62,10 @@ $(document).ready(function () {
 		$('#main-article p').css("font-size", size + "em");
 	}
 
-	function setHeadingColor(color) {
+	function setTitleColor(color) {
 		$('#main-article h1').css("color", color);
-		$('#circle-heading .tooltip').html("<span>Heading Hex: " + color + "</span>");
-		$('#circle-heading').css("background-color", color);
+		$('#circle-Title .tooltip').html("<span>Title Hex: " + color + "</span>");
+		$('#circle-Title').css("background-color", color);
 	}
 
 	function setParagraphColor(color) {
