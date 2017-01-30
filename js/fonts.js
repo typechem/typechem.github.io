@@ -6,8 +6,14 @@
 // FIX Eczar
 
 var combo = [
+    // Yanone Kaffeesatz
     [
-        ["Montserrat", "700", 1.8, "#E5DFD3", "PT Sans", 400, 1.0, "#1DB0A1", "#13302E"],
+        ["Abel", 400, 2.11, "#33C9DD", "Fira Sans", 400, 1.11, "#8A9BA8", "#293742"],
+        ["Playfair Display", 700, 2.11, "#342FE4", "PT Serif", 400, 1.24, "#232323", "#FEFFF1"],
+        ["Sansita", 700, 2.11, "#75FCDE", "PT Sans", 400, 1.11, "#BDBDBD", "#3B475F"],
+    ],
+    [
+        ["Montserrat", "700", 1.9, "#E5DFD3", "PT Sans", 400, 1.1, "#1DB0A1", "#13302E"],
         ["Prata", "400", 2.11, "#535A73", "Average", 400, 1.24, "#9FA7C4", "#F2F2F2"],
         ["Oxygen", 700, 2.11, "#343434", "Ropa Sans", 400, 1.24, "#646464", "#FFEB3B"]
     ],
