@@ -258,6 +258,10 @@ label {
 	font-size: 0.8em;
 }
 
+.ui-page, .ui-page-theme-a, .ui-page-active{
+	outline: none;
+}
+
 @media only screen and (min-device-width: 1024px) {
 	.menu {
 		min-width: 720px;
