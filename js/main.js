@@ -123,8 +123,8 @@ $(document).ready(function () {
 	//Title change when tab inactive//
 	//------------------------------//
 
-	var originalTitle = "TypeChemistry • A collection of handpicked font & color combinations";
-	var pairTitle = "TypeChemistry • " + combo[0][0][0] + " + " + combo[0][0][4];
+	var originalTitle = "TypeChem • A collection of handpicked font & color combinations";
+	var pairTitle = "TypeChem • " + combo[0][0][0] + " + " + combo[0][0][4];
 
 	document.title = originalTitle;
 
@@ -149,7 +149,7 @@ $(document).ready(function () {
 
 	function setDashTitle() {
 		$('.da').css("color", combo[day][hitCount][3]);
-		pairTitle = "TypeChemistry • " + combo[day][hitCount][0] + " + " + combo[day][hitCount][4];
+		pairTitle = "TypeChem • " + combo[day][hitCount][0] + " + " + combo[day][hitCount][4];
 	}
 
 	$('p, h1').on('swipeleft', function (e) {
